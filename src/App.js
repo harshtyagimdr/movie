@@ -13,7 +13,7 @@ class App extends React.Component {
   }
   componentDidMount(query){
     
-    var url="http://www.omdbapi.com/?i=tt3896198&apikey=242f041&s=";
+    var url="Your ApI Key here";
     axios.get(url+`${query?query:"harry"}`).then(res=>{
       this.setState({
         movies:res.data.Search
